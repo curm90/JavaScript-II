@@ -4,6 +4,18 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function adder(x) {
+  return function(y) {
+    return x + y
+  }
+}
+
+const add2 = adder(2)
+const add5 = adder(5)
+console.log(add2(2));
+console.log(add5(10));
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
