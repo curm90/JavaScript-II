@@ -5,9 +5,7 @@
 // The outer scope can be a parent function, or the top level of the script.
 
 function adder(x) {
-  return function(y) {
-    return x + y
-  }
+  return y => x + y
 }
 
 const add2 = adder(2)
